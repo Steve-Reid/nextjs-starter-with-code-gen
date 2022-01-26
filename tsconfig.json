@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components/*": [
-        "src/components/*"
+      "@/*": [
+        "./*"
       ]
     },
     "target": "es5",
@@ -30,7 +30,7 @@
               "postcss.config.js",
               "tailwind.config.js",
               "babel-plugin-macros.config.js",
-              "twin.d.ts",
+              "twin.d.ts", "generate/component/index.js",
   ],
   "exclude": ["node_modules", "generate", "plopfile.js"]
 }
