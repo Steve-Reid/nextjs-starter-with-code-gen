@@ -39,6 +39,12 @@ module.exports = {
   rules: {
     'arrow-body-style': 'off',
     'object-curly-spacing': ['warn', 'always'],
+    'no-restricted-exports': [
+      'error',
+      {
+        'restrictedNamedExports': ['']
+      }
+    ],
     'no-unused-vars': [
       'warn',
       {
@@ -47,6 +53,7 @@ module.exports = {
       },
     ],
     '@typescript-eslint/semi': ['off'],
+    '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/no-unused-vars': [
       'warn',
       {

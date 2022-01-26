@@ -30,7 +30,7 @@
               "postcss.config.js",
               "tailwind.config.js",
               "babel-plugin-macros.config.js",
-              "twin.d.ts"
+              "twin.d.ts",
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "generate", "plopfile.js"]
 }

@@ -11,7 +11,7 @@ An opinionated Nextjs starter project
 - CSS Framework - TailwindCSS v3
 - Component level Styling - Styled Components
 - Component Level CSS Integration - [Twin.Macro](https://github.com/ben-rogerson/twin.examples/tree/master/next-styled-components)
-- Component UI Development - Storybook v6.4.7
+- Component UI Development - Storybook v6.4.9
 - Lint - ESlint v8, AirBnB & Eslint-config-next
 - Format - Prettier
 - Unit Testing - Jest + react-testing-library
