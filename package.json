@@ -22,8 +22,7 @@
     "prepare": "husky install",
     "new": "plop",
     "new:component": "plop component",
-    "new:page": "plop page",
-    "new:icon": "plop icon"
+    "new:page": "plop page"
   },
   "resolutions": {
     "webpack": "^5"

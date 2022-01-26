@@ -12,6 +12,7 @@ An opinionated Nextjs starter project
 - Component level Styling - Styled Components
 - Component Level CSS Integration - [Twin.Macro](https://github.com/ben-rogerson/twin.examples/tree/master/next-styled-components)
 - Component UI Development - Storybook v6.4.9
+- Code Generator - [Plop](https://plopjs.com) v3.0.5
 - Lint - ESlint v8, AirBnB & Eslint-config-next
 - Format - Prettier
 - Unit Testing - Jest + react-testing-library
@@ -57,6 +58,38 @@ Entry point `pages/index.tsx`.
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
 
 The `pages/api` directory mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Code Generation
+
+This starter has been configured to enable to generation of the code, files and directories that make up project pages and component from command line via the use of the awesome [Plop](https://plopjs.com) libary to scaffold out the required code.
+
+Running the following command:
+
+```bash
+yarn run new
+```
+wil generate the following prompt:
+```bash
+rn run v1.22.17
+$ plop
+? [PLOP] Please choose a generator. (Use arrow keys)
+❯ component - Generates new React component
+  page - Generates new React page
+```
+Select an option and you will be then prompted for a name:
+```bash
+? [PLOP] Please choose a generator. component - Generates new React component
+? What's the name of the Component? Nav
+```
+After which, the following files are created:
+```bash
+✔  ++ /src/components/Nav/Nav.tsx
+✔  ++ /src/components/Nav/Nav.stories.tsx
+✔  ++ /src/components/Nav/Nav.test.tsx
+✔  ++ /src/components/Nav/index.ts
+✔  ++ /src/components/index.ts
+✔  _+ /src/components/index.ts
+✔  _+ /src/components/index.ts
+```
 ## Styling configurations
 
 This starter has been configure to accommodate both Tailwind and Styled Components styles syntax, or even Styled Components containing Tailwind classes syntax.
